@@ -102,8 +102,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .game_frame{
-    height: 50vh;
-    width: 85vh;;
+    height: 60vh;
+    width: 50vw;
     border: solid #757575 0.1em;
 }
 
