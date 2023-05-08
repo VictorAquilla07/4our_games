@@ -1,0 +1,205 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+body {
+    display: flex;
+    scrollbar-width: thin;
+    scrollbar-color: #353535 #10191a;
+}
+
+body::-webkit-scrollbar {
+    width: .5em;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #10191a;
+    opacity: 0;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #353535;
+    border-radius: 1em;
+    border: 0.1em solid #10191a;
+}
+
+.all {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    background: rgb(40,13,0);
+    background: linear-gradient(180deg, rgba(40,13,0,1) 10%, rgba(65,26,7,1) 35%, rgba(124,43,0,1) 69%, rgba(219,73,0,1) 100%);
+    height: 6em;
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 8em;
+    height: 8em;
+}
+
+.menu {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu div{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu div h2 a{
+    color: #ff9800;
+}
+
+.menu div h2 a:hover {
+    color: #848b8b;
+    border-left: solid #848b8b .1em;
+    border-right: solid #848b8b .1em;
+}
+
+.content {
+    display: flex;
+    background-color: #626262cf;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/backgrounds/background7.webp);
+    background-size: 100% 100%;
+}
+
+.game_name{
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+.game_name h2 {
+    color: #ff9800;
+}
+
+.game_frame{
+    height: 40em;
+    width: 50em;
+    border: solid #757575 0.1em;
+}
+
+.game_info {
+    padding: 1em;
+    margin-bottom: 1em;
+    border-bottom: solid #757575 0.1em;
+    border-left: solid #757575 0.1em;
+    border-right: solid #757575 0.1em;
+}
+
+.game_info h4,h5 {
+    color: #757575;
+}
+
+.other_games {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.other_games a{
+    color: inherit;
+}
+
+.recommended {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b7bbbf;
+    border: 0.1em solid black;
+    border-radius: 0.8em;
+    height: 11.5em;
+    width: 12em;
+}
+
+.recommended img{
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    height: 10em;
+    width: 12em;
+}
+
+.recommended h3 {
+
+}
+
+.footer {
+    background: rgb(219,73,0);
+    background: linear-gradient(180deg, rgba(219,73,0,1) 0%, rgba(124,43,0,1) 27%, rgba(65,26,7,1) 54%, rgba(25,8,0,1) 90%);
+    height: 6em;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.social-networks {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 1em;
+}
+
+.network {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: .5em;  
+}
+
+.network img{
+    width: 2em;
+    height: 2em;
+}
+
+.inst img{
+    margin-top: .1em;
+}
+
+.copyright {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.copyright p {
+    color: aliceblue;
+}
+
+.copyright img {
+    width: 2.5em;
+    height: 1.5em;
+}
