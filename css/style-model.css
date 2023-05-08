@@ -102,8 +102,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .game_frame{
-    height: 40em;
-    width: 50em;
+    height: 50vh;
+    width: 85vh;;
     border: solid #757575 0.1em;
 }
 
@@ -118,7 +118,12 @@ body::-webkit-scrollbar-thumb {
 .game_info h4,h5 {
     color: #757575;
 }
-
+.other_games_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: calc(100vw - 1000px);
+}
 .other_games {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
