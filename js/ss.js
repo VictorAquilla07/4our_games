@@ -1,7 +1,7 @@
 
 // Cria um array com os jogos disponíveis no site
   // Aqui são só exemplos.
-  const jogosDisponiveis = [
+const jogosDisponiveis = [
     { nome: "Super Mario World", link: "SuperMarioWorld.html", img: "../img/super-mario-world-icon.jfif" },
     { nome: "Call of Duty", link: "SuperMarioWorld.html", img: "../img/super-mario-world-icon.jfif" },
     { nome: "Minecraft", link: "SuperMarioWorld.html", img: "../img/super-mario-world-icon.jfif" },

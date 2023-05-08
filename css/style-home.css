@@ -126,7 +126,7 @@ body::-webkit-scrollbar-thumb {
 .btn_search {
     width: 1.5em;
     height: 1.5em;
-    margin-left: .5em;
+    margin-right: 1em;
 }
 
 .content {
