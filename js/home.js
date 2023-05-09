@@ -2,20 +2,20 @@
 // Cria um array com os jogos disponíveis no site
   // Aqui são só exemplos.
   const jogosDisponiveis = [
-    { nome: "Super Mario World", link: "./games/SuperMarioWorld.html", img: "../img/super-mario-world-icon.jfif" },
-    { nome: "Adivinhe o Pokémon", link: "./games/AdivinheOPokemon.html", img: "../img/adivinhe-pokemon-icon.webp" },
-    { nome: "Donkey Kong Arcade", link: "./games/DonkeyKongArcade.html", img: "../img/donkey-kong-country.webp" },
-    { nome: "GTA 2", link: "./games/GTA2.html", img: "../img/gta 2.jpg" },
-    { nome: "Subway Surfers", link: "./games/SubwaySurfers.html", img: "../img/subway-surfers.webp" },
-    { nome: "CrashBandicoot KR", link: "./games/CrashBandicootKartRacing.html", img: "../img/crash-bandicoot-icon.jfif" },
-    { nome: "Among Us Run Christmas", link: "./games/AmongUsRunChristmas.html", img: "../img/among-us.jpg" },
-    { nome: "Pokemon Emerald", link: "./games/pokemonEmerald.html", img: "../img/pk-emerald-icon.jfif" },
-    { nome: "Sonic 3", link: "./games/Sonic3.html", img: "../img/sonic3-icon.jpg" },
-    { nome: "Sonic Hedgehog", link: "./games/SonicHedgehog.html", img: "../img/sonic-hedgehog-icon.jfif" },
-    { nome: "Surfers Peru", link: "./games/SurfersPeru.html", img: "../img/surfers-peru-icon.png" },
-    { nome: "Vestir Garota", link: "./games/VestirGarotaDeAnime.html", img: "../img/vestirGarotasDeAnime-icon.webp" },
-    { nome: "Sniper Shot", link: "./games/SniperShot.html", img: "../img/sniper-shot-icon.jpg" },
-    { nome: "Fireboy Watergirl", link: "./games/FireboyWatergirl.html", img: "../img/firewater-icon.png" },
+    { nome: "Super Mario World", link: "GameTemplate.html", img: "../img/super-mario-world-icon.jfif" },
+    { nome: "Adivinhe o Pokémon", link: "GameTemplate.html", img: "../img/adivinhe-pokemon-icon.webp" },
+    { nome: "Donkey Kong Arcade", link: "GameTemplate.html", img: "../img/donkey-kong-country.webp" },
+    { nome: "GTA 2", link: "GameTemplate.html", img: "../img/gta 2.jpg" },
+    { nome: "Subway Surfers", link: "GameTemplate.html", img: "../img/subway-surfers.webp" },
+    { nome: "CrashBandicoot KR", link: "GameTemplate.html", img: "../img/crash-bandicoot-icon.jfif" },
+    { nome: "Among Us Run Christmas", link: "GameTemplate.html", img: "../img/among-us.jpg" },
+    { nome: "Pokemon Emerald", link: "GameTemplate.html", img: "../img/pk-emerald-icon.jfif" },
+    { nome: "Sonic 3", link: "GameTemplate.html", img: "../img/sonic3-icon.jpg" },
+    { nome: "Sonic Hedgehog", link: "GameTemplate.html", img: "../img/sonic-hedgehog-icon.jfif" },
+    { nome: "Surfers Peru", link: "GameTemplate.html", img: "../img/surfers-peru-icon.png" },
+    { nome: "Vestir Garota", link: "GameTemplate.html", img: "../img/vestirGarotasDeAnime-icon.webp" },
+    { nome: "Sniper Shot", link: "GameTemplate.html", img: "../img/sniper-shot-icon.jpg" },
+    { nome: "Fireboy Watergirl", link: "GameTemplate.html", img: "../img/firewater-icon.png" },
 ];
 
 function selecionarJogosAleatorios() {
@@ -42,13 +42,21 @@ function selecionarJogosAleatorios() {
     return jogosSelecionados;
 }
 
+function openGame(nameGame,linkGame) {
+    localStorage.setItem("nameGame", nameGame);
+    localStorage.setItem("linkGame", linkGame);
+    window.open('GameTemplate.html', "_self");
+}
+
 // Chama a função de seleção de jogos aleatórios e exibe os resultados na página
 const jogosRecomendados = selecionarJogosAleatorios();
 const jogosRecomendadosElemento = document.querySelector(".games");
 
 for (const jogo of jogosDisponiveis) {
     const a_tag = document.createElement("a");
-    a_tag.href = jogo.link;
+    a_tag.onclick = ()=> {
+        openGame(jogo.nome, jogo.link);
+     };
     jogosRecomendadosElemento.appendChild(a_tag);
     const recommended = document.createElement("div");
     recommended.className = 'recommended';
