@@ -58,7 +58,6 @@ function openGame(nameGame,linkGame) {
 }
 
 for (const jogo of jogosRecomendados) {
-    console.log(jogo);
     const a_tag = document.createElement("a");
     a_tag.className = 'game_link'
     a_tag.onclick = ()=> {
