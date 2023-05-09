@@ -42,6 +42,9 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -131,6 +134,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     background-color: #626262cf;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     min-height: 81vh;
     width: 100%;
@@ -141,6 +145,17 @@ body::-webkit-scrollbar-thumb {
 .blanck {
     width: 100%;
     height: 10em;
+}
+
+.slideshow {
+    width: 70%;
+    height: 45%;
+    margin-top: 8em;
+}
+
+.mySlides {
+    width: 100%;
+    height: 100%;
 }
 
 .games {

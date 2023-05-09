@@ -1,16 +1,99 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Projeto</title>
+    <link rel="stylesheet" href="../css/style-home.css">
+    <title>4our Games</title>
 </head>
+
 <body>
     <div class="all">
-        <div id="jogos-recomendados"></div>
+        <header class="header">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo 4our">
+            </div>
+            <div class="menu">
+                <div>
+                    <h2><a href="home.html">Home</a></h2>
+                </div>
+                <div>
+                    <h2><a href="categorias.html">Categorias</a></h2>
+                </div>
+                <div>
+                    <h2><a href="contato.html">Contate-nos</a></h2>
+                </div>
+                <div>
+                    <h2><a href="sobre.html">Sobre</h2></a>
+                </div>
+            </div>
+
+            <div class="busca">
+                <div class="divBusca">
+                    <input type="text" onkeyup="search()" name="search" id="txtBusca" placeholder="Buscar..." />
+                    <img src="../img/search-icon.png" class="btn_search" alt="search" />
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <div class="slideshow">
+                <img class="mySlides" src="../img/backgrounds/background3.jpg">
+                <img class="mySlides" src="../img/backgrounds/background4.jpg">
+                <img class="mySlides" src="../img/backgrounds/background5.jpg">
+                <img class="mySlides" src="../img/backgrounds/background6.webp">
+                <script>
+                    var slideIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > x.length) { slideIndex = 1 }
+                        x[slideIndex - 1].style.display = "block";
+                        setTimeout(carousel, 10000); // Change image every 10 seconds
+                    }
+                </script>
+            </div>
+            <div class="blanck"></div>
+            <div class="games">
+                <script src="../js/home.js"></script>
+            </div>
+            <div class="blanck"></div>
+        </main>
+
+        <footer class="footer">
+            <div class="social-networks">
+                <div class="network">
+                    <img src="../img/twitter-icon.png" alt="Twitter-Icon">
+                </div>
+                <div class="network">
+                    <img src="../img/linkedin-icon.png" alt="Linkedin-Icon">
+                </div>
+                <div class="network">
+                    <img src="../img/facebook-icon.png" alt="Facebook-Icon">
+                </div>
+                <div class="network" class="inst">
+                    <img src="../img/inst2.png" alt="Instagram-Icon">
+                </div>
+            </div>
+            <div class="copyright">
+                <img src="../img/Copyright-Symbol1.png" alt="Copyright-Symbol">
+                <p>Copyright-all rights reserved</p>
+            </div>
+        </footer>
     </div>
-    <script src="../js/ss.js"></script>
+
+    <script src="../js/search-home.js"></script>
 </body>
+
+</html>
+
+</body>
+
 </html>
