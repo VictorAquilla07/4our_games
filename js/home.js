@@ -25,7 +25,7 @@ function openGame(nameGame,linkGame) {
 }
 
 
-const jogosRecomendadosElemento = document.querySelector(".games");
+const jogosElemento = document.querySelector(".games");
 
 for (const jogo of jogosDisponiveis) {
     const a_tag = document.createElement("a");
@@ -33,7 +33,7 @@ for (const jogo of jogosDisponiveis) {
     a_tag.onclick = ()=> {
         openGame(jogo.nome, jogo.link);
      };
-    jogosRecomendadosElemento.appendChild(a_tag);
+    jogosElemento.appendChild(a_tag);
     const recommended = document.createElement("div");
     recommended.className = 'recommended';
     a_tag.appendChild(recommended);
