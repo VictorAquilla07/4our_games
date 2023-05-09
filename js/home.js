@@ -2,20 +2,20 @@
 // Cria um array com os jogos disponíveis no site
   // Aqui são só exemplos.
   const jogosDisponiveis = [
-    { nome: "Super Mario World", link: "GameTemplate.html", img: "../img/super-mario-world-icon.jfif" },
-    { nome: "Adivinhe o Pokémon", link: "GameTemplate.html", img: "../img/adivinhe-pokemon-icon.webp" },
-    { nome: "Donkey Kong Arcade", link: "GameTemplate.html", img: "../img/donkey-kong-country.webp" },
-    { nome: "GTA 2", link: "GameTemplate.html", img: "../img/gta 2.jpg" },
-    { nome: "Subway Surfers", link: "GameTemplate.html", img: "../img/subway-surfers.webp" },
-    { nome: "CrashBandicoot KR", link: "GameTemplate.html", img: "../img/crash-bandicoot-icon.jfif" },
-    { nome: "Among Us Run Christmas", link: "GameTemplate.html", img: "../img/among-us.jpg" },
-    { nome: "Pokemon Emerald", link: "GameTemplate.html", img: "../img/pk-emerald-icon.jfif" },
-    { nome: "Sonic 3", link: "GameTemplate.html", img: "../img/sonic3-icon.jpg" },
-    { nome: "Sonic Hedgehog", link: "GameTemplate.html", img: "../img/sonic-hedgehog-icon.jfif" },
-    { nome: "Surfers Peru", link: "GameTemplate.html", img: "../img/surfers-peru-icon.png" },
-    { nome: "Vestir Garota", link: "GameTemplate.html", img: "../img/vestirGarotasDeAnime-icon.webp" },
-    { nome: "Sniper Shot", link: "GameTemplate.html", img: "../img/sniper-shot-icon.jpg" },
-    { nome: "Fireboy Watergirl", link: "GameTemplate.html", img: "../img/firewater-icon.png" },
+    { nome: "Super Mario World", link: "https://www.jogosfas.com/game.php?id_juego=19435&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/super-mario-world-icon.jfif" },
+    { nome: "Adivinhe o Pokémon", link: "https://www.jogosfas.com/game.php?id_juego=11528&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/adivinhe-pokemon-icon.webp" },
+    { nome: "Donkey Kong Arcade", link: "https://www.jogosfas.com/game.php?id_juego=20816&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/donkey-kong-country.webp" },
+    { nome: "GTA 2", link: "https://www.jogosfas.com/game.php?id_juego=20740&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/gta 2.jpg" },
+    { nome: "Subway Surfers", link: "https://www.jogosfas.com/game.php?id_juego=21244&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/subway-surfers.webp" },
+    { nome: "CrashBandicoot KR", link: "https://www.jogosfas.com/game.php?id_juego=18298&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/crash-bandicoot-icon.jfif" },
+    { nome: "Among Us Run Christmas", link: "https://www.jogosfas.com/game.php?id_juego=20033&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/among-us.jpg" },
+    { nome: "Pokemon Emerald", link: "https://www.jogosfas.com/game.php?id_juego=18053&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/pk-emerald-icon.jfif" },
+    { nome: "Sonic 3", link: "https://www.jogosfas.com/game.php?id_juego=18028&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/sonic3-icon.jpg" },
+    { nome: "Sonic Hedgehog", link: "https://www.jogosfas.com/game.php?id_juego=19847&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/sonic-hedgehog-icon.jfif" },
+    { nome: "Surfers Peru", link: "https://www.jogosfas.com/game.php?id_juego=21320&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/surfers-peru-icon.png" },
+    { nome: "Vestir Garota", link: "https://www.jogosfas.com/game.php?id_juego=21230&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/vestirGarotasDeAnime-icon.webp" },
+    { nome: "Sniper Shot", link: "https://html5.gamedistribution.com/25747b9934954278ba356dce7d886ab9/?gd_sdk_referrer_url=https://www.clickjogos.com.br/jogos/sniper-shot", img: "../img/sniper-shot-icon.jpg" },
+    { nome: "Fireboy Watergirl", link: "https://html5.gamedistribution.com/03f124074b0049f89fdace0cacf8ead5/?gd_sdk_referrer_url=https://www.clickjogos.com.br/jogos/fireboy-and-watergirl-1-forest-temple", img: "../img/firewater-icon.png" },
 ];
 
 function selecionarJogosAleatorios() {
