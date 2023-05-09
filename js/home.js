@@ -18,38 +18,13 @@
     { nome: "Fireboy Watergirl", link: "https://html5.gamedistribution.com/03f124074b0049f89fdace0cacf8ead5/?gd_sdk_referrer_url=https://www.clickjogos.com.br/jogos/fireboy-and-watergirl-1-forest-temple", img: "../img/firewater-icon.png" },
 ];
 
-function selecionarJogosAleatorios() {
-    // Cria um objeto para armazenar os jogos já selecionados
-    const jogosSelecionadosObj = {};
-
-    // Cria um array para armazenar os jogos selecionados
-    const jogosSelecionados = [];
-
-    // Enquanto não atingir o número máximo de jogos recomendados
-    while (jogosSelecionados.length < jogosDisponiveis.length) {
-        // Seleciona um jogo aleatório
-        const jogoAleatorio = jogosDisponiveis[Math.floor(Math.random() * jogosDisponiveis.length)];
-
-        // Se o jogo ainda não foi selecionado, adiciona o jogo selecionado
-        if (!jogosSelecionadosObj[jogoAleatorio.nome]) {
-            jogosSelecionadosObj[jogoAleatorio.nome] = true;
-            jogosSelecionados.push(jogoAleatorio);
-        }
-
-    }
-
-    // Retorna os jogos selecionados
-    return jogosSelecionados;
-}
-
 function openGame(nameGame,linkGame) {
     localStorage.setItem("nameGame", nameGame);
     localStorage.setItem("linkGame", linkGame);
     window.open('GameTemplate.html', "_self");
 }
 
-// Chama a função de seleção de jogos aleatórios e exibe os resultados na página
-const jogosRecomendados = selecionarJogosAleatorios();
+
 const jogosRecomendadosElemento = document.querySelector(".games");
 
 for (const jogo of jogosDisponiveis) {
