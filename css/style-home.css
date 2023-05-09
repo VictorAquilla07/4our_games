@@ -77,9 +77,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menu div h2 a:hover {
-    color: #848b8b;
-    border-left: solid #848b8b .1em;
-    border-right: solid #848b8b .1em;
+    color: #ffffff;
 }
 
 .busca {
