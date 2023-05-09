@@ -50,10 +50,20 @@ function selecionarJogosAleatorios() {
 const jogosRecomendados = selecionarJogosAleatorios();
 const jogosRecomendadosElemento = document.querySelector(".other_games");
 
+
+function openGame(nameGame,linkGame) {
+    localStorage.setItem("nameGame", nameGame);
+    localStorage.setItem("linkGame", linkGame);
+    window.open('GameTemplate.html', "_self");
+}
+
 for (const jogo of jogosRecomendados) {
     console.log(jogo);
     const a_tag = document.createElement("a");
-    a_tag.href = jogo.link;
+    a_tag.className = 'game_link'
+    a_tag.onclick = ()=> {
+        openGame(jogo.nome, jogo.link);
+     };
     jogosRecomendadosElemento.appendChild(a_tag);
     const recommended = document.createElement("div");
     recommended.className = 'recommended';
