@@ -49,6 +49,7 @@ const jogosRecomendadosElemento = document.querySelector(".games");
 for (const jogo of jogosDisponiveis) {
     const a_tag = document.createElement("a");
     a_tag.href = jogo.link;
+    a_tag.className = 'game_link'
     jogosRecomendadosElemento.appendChild(a_tag);
     const recommended = document.createElement("div");
     recommended.className = 'recommended';
@@ -57,6 +58,7 @@ for (const jogo of jogosDisponiveis) {
     img.src = jogo.img;
     recommended.appendChild(img);
     const nameText = document.createElement("h3");
+    nameText.className = 'game_id'
     const name = document.createTextNode(jogo.nome);
     nameText.appendChild(name);
     recommended.appendChild(nameText);
