@@ -16,6 +16,7 @@
     { nome: "Vestir Garota", link: "https://www.jogosfas.com/game.php?id_juego=21230&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/vestirGarotasDeAnime-icon.webp" },
     { nome: "Sniper Shot", link: "https://html5.gamedistribution.com/25747b9934954278ba356dce7d886ab9/?gd_sdk_referrer_url=https://www.clickjogos.com.br/jogos/sniper-shot", img: "../img/sniper-shot-icon.jpg" },
     { nome: "Fireboy Watergirl", link: "https://html5.gamedistribution.com/03f124074b0049f89fdace0cacf8ead5/?gd_sdk_referrer_url=https://www.clickjogos.com.br/jogos/fireboy-and-watergirl-1-forest-temple", img: "../img/firewater-icon.png" },
+    { nome: "Animation vs Minecraft", link: "https://y8.com/embed/animation_vs_minecraft", img: "../img/Animation_vs_Minecraft.png" },
 ];
 
 function openGame(nameGame,linkGame) {
