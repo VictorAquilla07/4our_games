@@ -17,6 +17,7 @@
     { nome: "Sniper Shot", link: "https://html5.gamedistribution.com/25747b9934954278ba356dce7d886ab9/?gd_sdk_referrer_url=https://www.clickjogos.com.br/jogos/sniper-shot", img: "../img/sniper-shot-icon.jpg" },
     { nome: "Fireboy Watergirl", link: "https://html5.gamedistribution.com/03f124074b0049f89fdace0cacf8ead5/?gd_sdk_referrer_url=https://www.clickjogos.com.br/jogos/fireboy-and-watergirl-1-forest-temple", img: "../img/firewater-icon.png" },
     { nome: "Animation vs Minecraft", link: "https://y8.com/embed/animation_vs_minecraft", img: "../img/Animation_vs_Minecraft.png" },
+    { nome: "Wild Dino Hunt", link: "https://y8.com/embed/wild_dino_hunt", img: "../img/dino-icon.gif" },
 ];
 
 function openGame(nameGame,linkGame) {
