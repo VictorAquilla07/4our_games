@@ -25,7 +25,7 @@ function openGame(nameGame, linkGame) {
 }
 
 
-const jogosElemento = document.querySelectorAll(".items");
+const jogosElemento = document.querySelector(".items");
 
 console.log(jogosElemento);
 
