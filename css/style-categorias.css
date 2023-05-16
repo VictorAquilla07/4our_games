@@ -166,7 +166,7 @@ div.items:hover .item:hover {
 }
 
 div.control-container {
-    height: 300px;
+    height: 100%;
     position: absolute;
     width: 100%;
     overflow: hidden;
@@ -178,9 +178,9 @@ div.container {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    min-height: 300px;
     position: relative;
-    width: 100%;
+    width: 75%;
+    height: 100%;
     box-sizing: border-box;
     overflow: hidden;
     display: flex;
@@ -188,11 +188,8 @@ div.container {
     justify-content: center;
 }
 
-.container:hover{
-    .arrow-left,
-    .arrow-right{
+.container:hover .arrow-left,.arrow-right{
         opacity: 1;
-    }
   }
 
 .container:hover img {
@@ -212,10 +209,11 @@ div.container {
   height: 100%;
   color: #fff;
   transition: all 600ms ease-in-out;
-  background: linear-gradient(to left, transparent 0%, black 200%);
+  background: linear-gradient(to left, transparent 0%, rgb(105, 105, 105) 100%);
   opacity: 0.1;
   cursor: pointer;
   border: none;
+  border-radius: 0.8em;
   z-index: 941;
   display: flex;
   flex-direction: row;
@@ -226,39 +224,39 @@ div.container {
 .arrow-left img,.arrow-right img {
     width: 1em;
     height: 2em;
-    opacity: 0.1;
+    opacity: 0.5;
 }
 
 .arrow-left:hover img,
 .arrow-right:hover img {
     width: 1.25em;
     height: 2.5em;
+    transition: height 0.05s;
 }
 
 .arrow-right {
   right: 0;
   left: auto;
   text-align: right;
-  background: linear-gradient(to right, transparent 0%, black 300%);
+  background: linear-gradient(to right, transparent 0%, rgb(105, 105, 105) 150%);
+  border-radius: 0.8em;
 }
 
 .item {
     position: relative;
     align-self: center;
-    width: 200px;
-    height: 200px;
     margin: 0 3px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     z-index: 899;
 }
 
-.item:hover {
-    transform: scale(1.5);
+/* .item:hover {
+    transform: scale(1.2);
     margin: 30px;
     opacity: 1;
-    z-index: 950;
-}
+    z-index: 940;
+} */
 
 .item:hover .opacity-none {
     opacity: 1;

@@ -1,6 +1,7 @@
 
 // Cria um array com os jogos disponíveis no site
   // Aqui são só exemplos.
+
   const jogosDisponiveis = [
     { nome: "Super Mario World", link: "https://www.jogosfas.com/game.php?id_juego=19435&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/super-mario-world-icon.jfif" },
     { nome: "Adivinhe o Pokémon", link: "https://www.jogosfas.com/game.php?id_juego=11528&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/adivinhe-pokemon-icon.webp" },
