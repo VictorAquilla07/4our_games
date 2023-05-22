@@ -1,21 +1,101 @@
 
 const jogosDisponiveis = [
-    { nome: "Super Mario World", link: "https://www.jogosfas.com/game.php?id_juego=19435&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/super-mario-world-icon.jfif" },
-    { nome: "Adivinhe o Pokémon", link: "https://www.jogosfas.com/game.php?id_juego=11528&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/adivinhe-pokemon-icon.webp" },
-    { nome: "Donkey Kong Arcade", link: "https://www.jogosfas.com/game.php?id_juego=20816&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/donkey-kong-country.webp" },
-    { nome: "GTA 2", link: "https://www.jogosfas.com/game.php?id_juego=20740&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/gta 2.jpg" },
-    { nome: "Subway Surfers", link: "https://www.jogosfas.com/game.php?id_juego=21244&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/subway-surfers.webp" },
-    { nome: "CrashBandicoot KR", link: "https://www.jogosfas.com/game.php?id_juego=18298&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/crash-bandicoot-icon.jfif" },
-    { nome: "Among Us RC", link: "https://www.jogosfas.com/game.php?id_juego=20033&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/among-us.jpg" },
-    { nome: "Pokemon Emerald", link: "https://www.jogosfas.com/game.php?id_juego=18053&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/pk-emerald-icon.jfif" },
-    { nome: "Sonic 3", link: "https://www.jogosfas.com/game.php?id_juego=18028&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/sonic3-icon.jpg" },
-    { nome: "Sonic Hedgehog", link: "https://www.jogosfas.com/game.php?id_juego=19847&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/sonic-hedgehog-icon.jfif" },
-    { nome: "Surfers Peru", link: "https://www.jogosfas.com/game.php?id_juego=21320&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/surfers-peru-icon.png" },
-    { nome: "Vestir Garota", link: "https://www.jogosfas.com/game.php?id_juego=21230&code=68v7988vvb9vvvv6c277bee9vbv2vv98", img: "../img/vestirGarotasDeAnime-icon.webp" },
-    { nome: "Sniper Shot", link: "https://html5.gamedistribution.com/25747b9934954278ba356dce7d886ab9/?gd_sdk_referrer_url=https://www.clickjogos.com.br/jogos/sniper-shot", img: "../img/sniper-shot-icon.jpg" },
-    { nome: "Fireboy Watergirl", link: "https://html5.gamedistribution.com/03f124074b0049f89fdace0cacf8ead5/?gd_sdk_referrer_url=https://www.clickjogos.com.br/jogos/fireboy-and-watergirl-1-forest-temple", img: "../img/firewater-icon.png" },
-    { nome: "Animation vs Minecraft", link: "https://y8.com/embed/animation_vs_minecraft", img: "../img/Animation_vs_Minecraft.png" },
-    { nome: "Wild Dino Hunt", link: "https://y8.com/embed/wild_dino_hunt", img: "../img/dino-icon.gif" },
+    {
+        nome: "Super Mario World",
+        link: "https://www.jogosfas.com/game.php?id_juego=19435&code=68v7988vvb9vvvv6c277bee9vbv2vv98",
+        img: "../img/super-mario-world-icon.jfif",
+        categoria: ".aventura"
+    },
+    {
+        nome: "Adivinhe o Pokémon",
+        link: "https://www.jogosfas.com/game.php?id_juego=11528&code=68v7988vvb9vvvv6c277bee9vbv2vv98",
+        img: "../img/adivinhe-pokemon-icon.webp",
+        categoria: ".aventura"
+    },
+    {
+        nome: "Donkey Kong Arcade",
+        link: "https://www.jogosfas.com/game.php?id_juego=20816&code=68v7988vvb9vvvv6c277bee9vbv2vv98",
+        img: "../img/donkey-kong-country.webp",
+        categoria: ".acao"
+    },
+    {
+        nome: "GTA 2",
+        link: "https://www.jogosfas.com/game.php?id_juego=20740&code=68v7988vvb9vvvv6c277bee9vbv2vv98",
+        img: "../img/gta 2.jpg",
+        categoria: ".acao"
+    },
+    {
+        nome: "Subway Surfers",
+        link: "https://www.jogosfas.com/game.php?id_juego=21244&code=68v7988vvb9vvvv6c277bee9vbv2vv98",
+        img: "../img/subway-surfers.webp",
+        categoria: ".aventura"
+    },
+    {
+        nome: "CrashBandicoot KR",
+        link: "https://www.jogosfas.com/game.php?id_juego=18298&code=68v7988vvb9vvvv6c277bee9vbv2vv98",
+        img: "../img/crash-bandicoot-icon.jfif",
+        categoria: ".aventura"
+    },
+    {
+        nome: "Among Us RC",
+        link: "https://www.jogosfas.com/game.php?id_juego=20033&code=68v7988vvb9vvvv6c277bee9vbv2vv98",
+        img: "../img/among-us.jpg",
+        categoria: ".acao"
+    },
+    {
+        nome: "Pokemon Emerald",
+        link: "https://www.jogosfas.com/game.php?id_juego=18053&code=68v7988vvb9vvvv6c277bee9vbv2vv98",
+        img: "../img/pk-emerald-icon.jfif",
+        categoria: ".aventura"
+    },
+    {
+        nome: "Sonic 3",
+        link: "https://www.jogosfas.com/game.php?id_juego=18028&code=68v7988vvb9vvvv6c277bee9vbv2vv98",
+        img: "../img/sonic3-icon.jpg",
+        categoria: ".aventura"
+    },
+    {
+        nome: "Sonic Hedgehog",
+        link: "https://www.jogosfas.com/game.php?id_juego=19847&code=68v7988vvb9vvvv6c277bee9vbv2vv98",
+        img: "../img/sonic-hedgehog-icon.jfif",
+        categoria: ".aventura"
+    },
+    {
+        nome: "Surfers Peru",
+        link: "https://www.jogosfas.com/game.php?id_juego=21320&code=68v7988vvb9vvvv6c277bee9vbv2vv98",
+        img: "../img/surfers-peru-icon.png",
+        categoria: ".aventura"
+    },
+    {
+        nome: "Vestir Garota",
+        link: "https://www.jogosfas.com/game.php?id_juego=21230&code=68v7988vvb9vvvv6c277bee9vbv2vv98",
+        img: "../img/vestirGarotasDeAnime-icon.webp",
+        categoria: ".meninas"
+    },
+    {
+        nome: "Sniper Shot",
+        link: "https://html5.gamedistribution.com/25747b9934954278ba356dce7d886ab9/?gd_sdk_referrer_url=https://www.clickjogos.com.br/jogos/sniper-shot",
+        img: "../img/sniper-shot-icon.jpg",
+        categoria: ".acao"
+    },
+    {
+        nome: "Fireboy Watergirl",
+        link: "https://html5.gamedistribution.com/03f124074b0049f89fdace0cacf8ead5/?gd_sdk_referrer_url=https://www.clickjogos.com.br/jogos/fireboy-and-watergirl-1-forest-temple",
+        img: "../img/firewater-icon.png",
+        categoria: ".aventura"
+    },
+    {
+        nome: "Animation vs Minecraft",
+        link: "https://y8.com/embed/animation_vs_minecraft",
+        img: "../img/Animation_vs_Minecraft.png",
+        categoria: ".acao"
+    },
+    {
+        nome: "Wild Dino Hunt",
+        link: "https://y8.com/embed/wild_dino_hunt",
+        img: "../img/dino-icon.gif",
+        categoria: ".acao"
+    },
 ];
 
 function openGame(nameGame, linkGame) {
@@ -25,17 +105,17 @@ function openGame(nameGame, linkGame) {
 }
 
 
-const jogosElemento = document.querySelector(".items");
 
-console.log(jogosElemento);
 
 for (const jogo of jogosDisponiveis) {
+    const jogosElemento = document.querySelector(jogo.categoria);
+    console.log(jogosElemento);
     const a_tag = document.createElement("a");
     a_tag.className = 'game_link'
     a_tag.className = 'item'
-    a_tag.onclick = ()=> {
+    a_tag.onclick = () => {
         openGame(jogo.nome, jogo.link);
-     };
+    };
     jogosElemento.appendChild(a_tag);
     const recommended = document.createElement("div");
     recommended.className = 'recommended';
@@ -50,7 +130,7 @@ for (const jogo of jogosDisponiveis) {
     recommended.appendChild(nameText);
 }
 
-function MouseWheelHandler(e, element) {
+/*function MouseWheelHandler(e, element) {
     var delta = 0;
     if (typeof e === 'number') {
         delta = e;
@@ -134,4 +214,4 @@ window.onload = function () {
             carousel.rightScroll.style.opacity = 1;
         }
     }
-}
+}*/
