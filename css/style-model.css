@@ -99,6 +99,7 @@ body::-webkit-scrollbar-thumb {
 
 .game_name h2 {
     color: #ff9800;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 .game_frame{
