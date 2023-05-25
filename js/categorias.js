@@ -109,7 +109,6 @@ function openGame(nameGame, linkGame) {
 
 for (const jogo of jogosDisponiveis) {
     const jogosElemento = document.querySelector(jogo.categoria);
-    console.log(jogosElemento);
     const a_tag = document.createElement("a");
     a_tag.className = 'game_link'
     a_tag.className = 'item'
