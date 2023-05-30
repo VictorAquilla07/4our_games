@@ -73,12 +73,11 @@ body::-webkit-scrollbar-thumb {
 
 .menu div h2 a{
     color: #ff9800;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 .menu div h2 a:hover {
-    color: #848b8b;
-    border-left: solid #848b8b .1em;
-    border-right: solid #848b8b .1em;
+    color: #ffffff;
 }
 
 .content {
@@ -100,6 +99,7 @@ body::-webkit-scrollbar-thumb {
 
 .game_name h2 {
     color: #ff9800;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 .game_frame{
@@ -162,10 +162,6 @@ body::-webkit-scrollbar-thumb {
     border-top-right-radius: 0.8em;
     height: 10em;
     width: 12em;
-}
-
-.recommended h3 {
-
 }
 
 .footer {

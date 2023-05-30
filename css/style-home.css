@@ -77,6 +77,7 @@ body::-webkit-scrollbar-thumb {
 
 .menu div h2 a{
     color: #ff9800;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 .menu div h2 a:hover {
